@@ -162,13 +162,30 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h2, h3, h4, h5, h6 {
 		color: #000000;
 		font-weight: 800;
-		letter-spacing: 0.225em;
+		letter-spacing: 0.125em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
+	}
+	
+	h1{
+		color: #ffffff;
+		font-weight: 800;
+		letter-spacing: 0.125em;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+	h7{
+		color: #ffffff;
+		font-weight: 8000;
+		letter-spacing: 0.055em;
+		line-height: inherit;
+		margin: 0 0 1em 0;
+		text-transform: lowercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
