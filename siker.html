@@ -1,63 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-    <title>Kapcsolatfelvétel</title>
+    <title>Üzenet elküldve</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" href="icon.png">
     <style>
-        body {Kapcsolatfelvétel
-              Név
-              Email cím
-              Telefonszám
-              Üzenet
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #1d242a;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         #successMessage {
-            background-color: white;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             text-align: center;
+            max-width: 450px;
+            width: 100%;
         }
 
-        #successText {Kapcsolatfelvétel
-              Név
-              Email cím
-              Telefonszám
-              Üzenet
-            color: green;
-            font-size: 24px;
-            margin-bottom: 10px;
+        #successIcon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        #successText {
+            color: #2e7d32;
+            font-size: 22px;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+        }
+
+        #successSubtext {
+            color: #666;
+            font-size: 15px;
+            margin: 0 0 25px 0;
+            line-height: 1.5;
         }
 
         #backButton {
-            padding: 10px 20px;
-            background-color: #3498db;
+            padding: 12px 30px;
+            background-color: #4f4fcc;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
             transition: background-color 0.3s ease;
         }
 
         #backButton:hover {
-            background-color: #2980b9;
+            background-color: #3b3ba3;
+        }
+
+        @media screen and (max-width: 480px) {
+            #successMessage {
+                padding: 30px 20px;
+            }
+            #successText {
+                font-size: 18px;
+            }
+            #backButton {
+                width: 100%;
+                padding: 14px 20px;
+            }
         }
     </style>
 </head>
-<Kapcsolatfelvétel
-              Név
-              Email cím
-              Telefonszám
-              Üzenet>
+<body>
 
 <div id="successMessage">
+    <div id="successIcon">✅</div>
     <p id="successText">Üzenet sikeresen elküldve!</p>
+    <p id="successSubtext">Köszönöm megkeresését, hamarosan válaszolok!</p>
     <button id="backButton">Vissza a kezdőlapra</button>
 </div>
 
@@ -65,8 +91,7 @@
     const backButton = document.getElementById('backButton');
 
     backButton.addEventListener('click', function() {
-        // Redirect to a specific page (change the URL accordingly)
-        window.location.href = 'https://ottotatai.github.io/csilla'; // Replace with your desired URL
+        window.location.href = 'https://ottotatai.github.io/csilla';
     });
 </script>
 

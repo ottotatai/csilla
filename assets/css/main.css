@@ -80,6 +80,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -250,7 +251,8 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px #fff;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
 		margin: 3em 0;
 	}
 
@@ -2777,10 +2779,6 @@ input, select, textarea {
 				display: block;
 			}
 
-				.spotlight br {
-					display: none;
-				}
-
 				.spotlight .image {
 					width: 100%;
 				}
@@ -2788,8 +2786,12 @@ input, select, textarea {
 				.spotlight .content {
 					padding: 4em 3em 2em 3em ;
 					max-width: none;
-					text-align: center;
+					text-align: left;
 					width: 100%;
+				}
+
+				.spotlight .content h2 {
+					text-align: center;
 				}
 
 		}
